@@ -11,6 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit {
    public data:any;
+   public info: any;
   constructor(private http: HttpClient){
 
   }
@@ -26,6 +27,13 @@ export class AppComponent implements OnInit {
       console.log(res);
       this.data =res;
     })
+
+    this.http.get('https://fakestoreapi.com/products/1')
+    .subscribe((res:any) =>{
+      console.log(res);
+      this.info =res;
+    })
+    
       
   }
 }
