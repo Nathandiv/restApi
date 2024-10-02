@@ -14,6 +14,7 @@ import { initFlowbite } from 'flowbite';
 export class AppComponent implements OnInit {
    public data:any;
    public info: any;
+   itemImageUrl="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
   constructor(private http: HttpClient){
 
   }

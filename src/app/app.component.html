@@ -98,6 +98,10 @@
 
 
 
+
+
+
+
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg" style="margin-top: 30px;">
   <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
       <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -109,25 +113,28 @@
                   </div>
               </th>
               <th scope="col" class="px-6 py-3">
+                id
+              </th>
+              <th scope="col" class="px-6 py-3">
                 title
               </th>
               <th scope="col" class="px-6 py-3">
-                userId
+                price
               </th>
               <th scope="col" class="px-6 py-3">
-                completed
+                description
               </th>
               <th scope="col" class="px-6 py-3">
-                  Accessories
+                category
               </th>
               <th scope="col" class="px-6 py-3">
-                  Available
+                image
               </th>
               <th scope="col" class="px-6 py-3">
-                  Price
+                rating
               </th>
               <th scope="col" class="px-6 py-3">
-                  Weight
+                count
               </th>
               <th scope="col" class="px-6 py-3">
                   Action
@@ -143,25 +150,29 @@
                   </div>
               </td>
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Apple MacBook Pro 17"
+                {{info.title}}
               </th>
               <td class="px-6 py-4">
-                  Silver
+                  {{info.id}}
               </td>
               <td class="px-6 py-4">
-                  Laptop
+                {{info.price}}
               </td>
               <td class="px-6 py-4">
-                  Yes
+                {{info.description}}
               </td>
               <td class="px-6 py-4">
-                  Yes
+                {{info.category}}
               </td>
               <td class="px-6 py-4">
-                  $2999
+                <img alt="item" [src]="itemImageUrl" style="width: 50px; height: 50px;">
               </td>
               <td class="px-6 py-4">
-                  3.0 lb.
+                {{info.rate}}
+
+            </td>
+              <td class="px-6 py-4">
+                {{info.count}}
               </td>
               <td class="flex items-center px-6 py-4">
                   <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
@@ -193,6 +204,9 @@
               <td class="px-6 py-4">
                   $1999
               </td>
+              <td class="px-6 py-4">
+                3.0 lb.
+            </td>
               <td class="px-6 py-4">
                   1.0 lb.
               </td>
