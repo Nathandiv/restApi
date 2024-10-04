@@ -15,9 +15,7 @@ export class AppComponent implements OnInit {
    public data:any;
    public info: any;
    itemImageUrl="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
-  constructor(private http: HttpClient){
-
-  }
+  constructor(private http: HttpClient){}
   title = 'Api';
 
   ngOnInit(): void {
